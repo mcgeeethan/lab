@@ -4,7 +4,7 @@ class Account:
         Function to set up account object
         :param name: Account name
         '''
-        pass
+        self.__name = name
 
     def deposit(self, amount: float) -> bool:
         '''
