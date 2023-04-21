@@ -1,46 +1,24 @@
 class Account:
-    def __init__(self, name: str) ->None:
-        '''
-        Function to set up account object
-        :param name: Account name
-        '''
+    def __init__(self, name):
         self.__account_name = name
         self.__account_balance = 0
 
-    def deposit(self, amount: float) -> bool:
-        '''
-        Function to deposit into the users account
-        :param amount: Currency amount
-        :return: Boolean value
-        '''
+    def deposit(self, amount):
         if amount <= 0:
             return False
         else:
             self.__account_balance = self.__account_balance + amount
             return True
 
-    def withdraw(self, amount: float) -> bool:
-        '''
-        Fuction to withdraw currency from the users account
-        :param amount: Currecny amount
-        :return: Boolean value
-        '''
+    def withdraw(self, amount):
         if amount <= 0 or amount > self.__account_balance:
             return False
         else:
             self.__account_balance = self.__account_balance - amount
             return True
 
-    def get_balance(self) -> None:
-        '''
-        Function to return the account balance
-        :return: account balance
-        '''
+    def get_balance(self):
         return self.__account_balance
 
-    def get_name(self) -> None:
-        '''
-        Function to return the account holders name
-        :return: account holders name
-        '''
+    def get_name(self):
         return self.__account_name
