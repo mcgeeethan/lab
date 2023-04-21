@@ -1,5 +1,9 @@
 class Account:
-    def __init__(self):
+    def __init__(self, name: str) ->None:
+        '''
+        file out the comment
+        :param name:
+        '''
         pass
 
     def deposit(self, amount):
