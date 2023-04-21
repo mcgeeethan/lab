@@ -9,7 +9,7 @@ class Test:
         del self.a1
 
     def test_init(self):
-        pass
+        assert self.a1.get_name() == 'John'
 
     def test_deposit(self):
         #negative, zero, positive
