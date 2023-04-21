@@ -1,15 +1,25 @@
 class Account:
     def __init__(self, name: str) ->None:
         '''
-        file out the comment
-        :param name:
+        Function to set up account object
+        :param name: Account name
         '''
         pass
 
-    def deposit(self, amount):
+    def deposit(self, amount: float) -> bool:
+        '''
+        Function to deposit into the users account
+        :param amount: Currency amount
+        :return: Boolean value
+        '''
         pass
 
-    def withdraw(self, amount):
+    def withdraw(self, amount: float) -> bool:
+        '''
+        Function ot withdraw money from the users account
+        :param amount: Currency amount
+        :return: Boolean value
+        '''
         pass
 
     def get_balance(self):
