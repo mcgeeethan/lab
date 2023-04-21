@@ -1,5 +1,5 @@
 from account import *
-import pytest
+from pytest import *
 
 class Test:
     def setup_method(self):
