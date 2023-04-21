@@ -30,10 +30,10 @@ class Test:
         assert self.a1.withdraw(0) is False
         assert self.a1.get_balance() == pytest.approx(0, abs=0.01)
 
-        assert self.a1.deposit(1) is True
         assert self.a1.withdraw(100) is False
-        assert self.a1.get_balance() == pytest.approx(1, abs=0.01)
+        assert self.a1.get_balance() == pytest.approx(0, abs=0.01)
 
+        assert self.a1.deposit(1) is True
         assert self.a1.withdraw(1) is True
         assert self.a1.get_balance() == pytest.approx(0, abs=0.01)
 

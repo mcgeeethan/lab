@@ -25,22 +25,20 @@ class Account:
         :param amount: Currecny amount
         :return: Boolean value
         '''
-        if amount <= 0:
-            return False
-        elif amount > self.__account_balance:
+        if amount <= 0 or amount > self.__account_balance:
             return False
         else:
             self.__account_balance = self.__account_balance - amount
             return True
 
-    def get_balance(self):
+    def get_balance(self) -> None:
         '''
         Function to return the account balance
         :return: account balance
         '''
         return self.__account_balance
 
-    def get_name(self):
+    def get_name(self) -> None:
         '''
         Function to return the account holders name
         :return: account holders name
